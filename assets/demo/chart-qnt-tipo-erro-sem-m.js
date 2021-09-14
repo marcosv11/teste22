@@ -1,5 +1,5 @@
 var myChart = new Chart(document.getElementById("chartBar5"), {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
       labels: ["Erro 1", "Erro 2", "Erro 3", "Erro 4 ", "Erro 5"],
       datasets: [

@@ -5,7 +5,7 @@ gradient.addColorStop(0, 'rgba(224, 195, 155, 1)');
 gradient.addColorStop(1, 'rgba(100, 100, 0,0)');
 
 var myChart = new Chart(ctx, {
-  type: 'line',
+  type: 'horizontalBar',
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{

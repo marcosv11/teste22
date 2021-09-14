@@ -9,7 +9,7 @@ gradientFill.addColorStop(0, "rgba(255, 0, 0, 0.70)");
 gradientFill.addColorStop(1, "rgba(255, 0, 0, 0.70)");
 
 var myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'horizontalBar',
     data: {
       labels: ["DIA 1", "DIA 2", "DIA 3", "DIA 4", "DIA 5", "DIA 6", "DIA 7" , "DIA 8", "DIA 9", "DIA 10", "DIA 11", "DIA 12", "DIA 13", "DIA 14", "DIA 15"],
         datasets: [{
@@ -24,7 +24,7 @@ var myChart = new Chart(ctx, {
             pointRadius: 3,
             fill: true,
             backgroundColor: gradientFill,
-            borderWidth: 4,
+            borderWidth: 2,
             data: [6100, 7120, 2150, 2170, 370, 1180, 1160,6100, 7120, 2150, 2170, 7120, 370, 1160,3232],
             
         }]

@@ -10,9 +10,9 @@ gradientFill.addColorStop(1, "rgba(255, 0, 0, 0.70)");
 
 
 var myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'horizontalBar',
     data: {
-        labels: ["DIA 1", "DIA 1", "DIA 1", "DIA 1", "DIA 1", "DIA 1", "DIA 1" , "DIA 1", "DIA 1", "DIA 1", "DIA 1", "DIA 1", "DIA 1", "DIA 1", "DIA 1"],
+        labels: ["DIA 1", "DIA 2", "DIA 3", "DIA 4", "DIA 5", "DIA 6", "DIA 7" , "DIA 8", "DIA 9", "DIA 10", "DIA 11", "DIA 12", "DIA 13", "DIA 14", "DIA 15"],
         datasets: [{
             label: "Erros",
             borderColor: gradientStroke,
