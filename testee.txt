@@ -1,0 +1,49 @@
+let filename = 'data/city.csv';
+
+// all of your code should be inside this command
+d3.csv(filename).then(function(loadedData) {
+  
+  // let's see if our data loaded correctly
+  // (and take a peek at how it's formatted)
+  console.log(loadedData);
+  
+  // empty lists for our data and the labels
+  let data =   [];
+  let labels = [];
+  
+  // use a for-loop to load the data from the
+  // file into our lists
+  for (let i=0; i<loadedData.length; i++) {
+    console.log(loadedData[i]);
+    
+    // get the year and mean temp for each listing
+    // note: the 'keys' here correspond to the headers
+    // in our file and need to be typed exactly
+    let cidade =     loadedData[i].cidade;
+    let populacao = loadedData[i].populacao;
+    console.log(populacao);
+    
+    // add the year to our labels
+    labels.push(cidade);
+    
+    // and mean temp to the data
+    data.push(populacao);    
+  }
+  
+  // basic line chart settings
+  let options = {
+    type: 'line',
+    data: {
+      labels: labels,  // the labels we loaded!
+      datasets: [{
+        data: data,    // the data we loaded!
+      
+        pointRadius: 0.1,
+        pointHoverRadius: 0,
+        borderColor: 'RGBA(255,0,80,0.6)'
+      }]
+    }
+  };
+  
+  let chart = new Chart(document.getElementById('canvas'), options);
+});
