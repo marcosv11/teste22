@@ -209,7 +209,7 @@
 
                         </table>
                     </div>
-                    
+
 
 
 
@@ -218,43 +218,9 @@
                             <h1 class="mt-4">Titulo</h1>
 
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <h1 class="mt-4">Titulo</h1>
-                           
-                        </div>
-
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-top: 30px">
-                            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                            <script type="text/javascript" class="col-lg-6 col-md-6 col-sm-6">
-                                google.charts.load('current', { 'packages': ['timeline'] });
-                                google.charts.setOnLoadCallback(drawChart);
-                                function drawChart() {
-                                    var container = document.getElementById('timeline');
-                                    var chart = new google.visualization.Timeline(container);
-                                    var dataTable = new google.visualization.DataTable();
-
-                                    dataTable.addColumn({ type: 'string', id: 'President' });
-                                    dataTable.addColumn({ type: 'date', id: 'Start' });
-                                    dataTable.addColumn({ type: 'date', id: 'End' });
-                                    dataTable.addRows([
-                                        ['Washington', new Date(1789, 3, 30), new Date(1797, 2, 4)],
-                                        ['Adams', new Date(1797, 2, 4), new Date(1801, 2, 4)],
-                                        ['Jefferson', new Date(1801, 2, 4), new Date(1809, 2, 4)]]);
-
-                                    chart.draw(dataTable);
-                                }
-                            </script>
-                            </head>
-
-                            <body>
-                                <div id="timeline"></div>
-                            </body>
-                        </div>
-
-
                         <div class="col-lg-2 col-md-2 col-sm-2">
                             <div class="card card-stats">
                                 <div class="card-header card-header card-header-icon">
@@ -277,7 +243,7 @@
                                 <div class="card-header card-header card-header-icon">
 
 
-                                    <h1 class="card-title" style="text-align: center">3<p class="card-category">
+                                    <h1 class="card-title" style="text-align: center">2<p class="card-category">
 
                                             Agosto</p>
                                     </h1>
@@ -291,61 +257,120 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <div class="card card-stats">
-                                <div class="card-header card-header card-header-icon">
+
+                        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-top: 30px">
+                            <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+                            <script>
+                                google.charts.load("current", { packages: ["timeline"] });
+                                google.charts.setOnLoadCallback(drawChart);
+                                function drawChart() {
+                                    var container = document.getElementById('example5.4');
+                                    var chart = new google.visualization.Timeline(container);
+                                    var dataTable = new google.visualization.DataTable();
+                                    dataTable.addColumn({ type: 'string', id: 'Room' });
+                                    dataTable.addColumn({ type: 'string', id: 'Name' });
+                                    dataTable.addColumn({ type: 'date', id: 'Start' });
+                                    dataTable.addColumn({ type: 'date', id: 'End' });
+                                    dataTable.addRows([
+                                        ['Erros', '', new Date(0, 0, 0, 12, 0, 0), new Date(0, 0, 0, 13, 0, 0)],
+                                        ['Erros', '', new Date(0, 0, 0, 14, 0, 0), new Date(0, 0, 0, 16, 0, 0)],
+                                        ['Erros', '', new Date(0, 0, 0, 16, 0, 0), new Date(0, 0, 0, 19, 0, 0)],
+                                        ['Sucesso', '', new Date(0, 0, 0, 12, 30, 0), new Date(0, 0, 0, 14, 0, 0)],
+                                        ['Sucesso', '', new Date(0, 0, 0, 14, 30, 0), new Date(0, 0, 0, 16, 0, 0)],
+                                        ['Sucesso', '', new Date(0, 0, 0, 16, 30, 0), new Date(0, 0, 0, 18, 0, 0)]]);
 
 
-                                    <h1 class="card-title" style="text-align: center">2<p class="card-category">
 
-                                            Agosto</p>
-                                    </h1>
+                                    var options = {
+                                        colors: ['red', 'green'],
+                                    };
 
+                                    chart.draw(dataTable, options);
+                                }
+                            </script>
 
-                                </div>
-                                <div class="card-footer" style="text-align: ce;">
-                                    <div class="stats">
-                                        <h6 class="card-title">Mobile</h6>
-                                    </div>
-                                </div>
-                            </div>
-
+                            <div id="example5.4" style="height: auto;"></div>
 
                         </div>
 
 
+
                     </div>
-
-
-
-
                     <div class="row">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <div class="card card-stats">
+                                    <div class="card-header card-header card-header-icon">
+
+
+                                        <h1 class="card-title" style="text-align: center">4<p class="card-category">
+                                                Agosto</p>
+                                        </h1>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="stats">
+                                            <h6 class="card-title">Internet</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                <div class="card card-stats">
+                                    <div class="card-header card-header card-header-icon">
+
+
+                                        <h1 class="card-title" style="text-align: center">2<p class="card-category">
+
+                                                Agosto</p>
+                                        </h1>
+
+
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="stats">
+                                            <h6 class="card-title">Mobile</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-top: 30px">
+                                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                                <script type="text/javascript" class="col-lg-6 col-md-6 col-sm-6">
+                                    google.charts.load('current', { 'packages': ['timeline'] });
+                                    google.charts.setOnLoadCallback(drawChart);
+                                    function drawChart() {
+                                        var container = document.getElementById('timeline');
+                                        var chart = new google.visualization.Timeline(container);
+                                        var dataTable = new google.visualization.DataTable();
+
+                                        dataTable.addColumn({ type: 'string', id: 'President' });
+                                        dataTable.addColumn({ type: 'date', id: 'end' });
+                                        dataTable.addColumn({ type: 'date', id: 'End' });
+                                        dataTable.addRows([
+                                            ['Erro 1', new Date(1789, 3, 30), new Date(1797, 2, 4)],
+                                            ['Erro 2', new Date(1797, 2, 4), new Date(1801, 2, 4)],
+                                            ['Erro 3', new Date(1801, 2, 4), new Date(1809, 2, 4)]]);
+
+                                        chart.draw(dataTable);
+                                    }
+                                </script>
+                                </head>
+
+                                <body>
+                                    <div id="timeline"></div>
+                                </body>
+                            </div>
 
 
 
-
+                        </div>
                     </div>
-
-
-
-
-
-
                 </div>
-
-
-
-
-
-
-
         </div>
-
-
-
-
         </main>
-
     </div>
 
 
